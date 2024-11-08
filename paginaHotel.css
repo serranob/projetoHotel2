@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0043A4;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hotel-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.hotel-info img {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.hotel-info div {
+    flex: 1;
+    padding: 10px;
+}
+
+.hotel-info h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.hotel-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 32%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.price-section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.price-section h3 {
+    font-size: 1.6rem;
+    color: #0043A4;
+}
+
+.availability-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+.availability-section h3 {
+    font-size: 1.8rem;
+    color: #0043A4;
+    margin-bottom: 20px;
+}
+.availability-section form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.availability-section input[type="date"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 48%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+.availability-section button {
+    background-color: #ff9f00;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+.availability-section button:hover {
+    background-color: #e68900;
+}
+/* Adicionando uma borda suave ao redor do formulário */
+.availability-section form {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+.availability-section .notice {
+    font-size: 1rem;
+    color: #666;
+}
+.availability-section .notice strong {
+    color: #0043A4;
+}
+.book-now-btn {
+    background-color: #ff9f00;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+.book-now-btn:hover {
+    background-color: #e68900;
+}
+
+.reviews{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.review{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .hotel-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hotel-info img {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .gallery {
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .gallery img {
+        width: 48%;
+        height: 200px;
+    }
+
+    .price-section {
+        padding: 20px;
+    }
+
+    .availability-section form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .availability-section input[type="date"] {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .availability-section button {
+        width: 80%;
+        padding: 14px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hotel-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .hotel-info p {
+        font-size: 0.9rem;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .price-section h3 {
+        font-size: 1.4rem;
+    }
+
+    .availability-section h3 {
+        font-size: 1.6rem;
+    }
+
+    .availability-section input[type="date"] {
+        width: 100%;
+    }
+
+    .availability-section button {
+        width: 100%;
+        padding: 16px 0;
+    }
+
+    .reviews .review {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review img {
+        margin-bottom: 10px;
+    }
+}
